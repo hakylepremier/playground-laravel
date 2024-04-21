@@ -1,0 +1,21 @@
+1. Discover asset images
+a. Open resources/js/app.js
+b. Add the following lines:
+import.meta.glob(["../images/**"]);
+
+2. Move asset images to resources/images and use them in the website using 
+{{ Vite::asset('resources/images/image-name.png') }}
+
+3. Add default page
+a. Copy the home page contents to resources/views/home.blade.php
+
+4. Add styles:
+a. Add appropriate fonts to tailwind.config.js
+b. Add the appropriate styles to resources/css/app.css
+
+
+a. Open resources/views/layouts/app.blade.php
+b. Add the following lines:
+
+<link rel="icon" href="/storage/images/logo.png">
+<link rel="apple-touch-icon" href="/storage/images/logo.png">
